@@ -1,0 +1,82 @@
+{
+  "total_params": 14410,
+  "total_layers": 7,
+  "layers": [
+    {
+      "index": 0,
+      "name": "conv2d",
+      "type": "Conv2D",
+      "output_shape": "(None, 26, 26, 8)",
+      "params": 80,
+      "hw_ops": {
+        "type": "conv",
+        "filters": 8,
+        "kernel": 3
+      }
+    },
+    {
+      "index": 1,
+      "name": "max_pooling2d",
+      "type": "MaxPooling2D",
+      "output_shape": "(None, 13, 13, 8)",
+      "params": 0,
+      "hw_ops": {
+        "type": "maxpool"
+      }
+    },
+    {
+      "index": 2,
+      "name": "conv2d_1",
+      "type": "Conv2D",
+      "output_shape": "(None, 11, 11, 16)",
+      "params": 1168,
+      "hw_ops": {
+        "type": "conv",
+        "filters": 16,
+        "kernel": 3
+      }
+    },
+    {
+      "index": 3,
+      "name": "max_pooling2d_1",
+      "type": "MaxPooling2D",
+      "output_shape": "(None, 5, 5, 16)",
+      "params": 0,
+      "hw_ops": {
+        "type": "maxpool"
+      }
+    },
+    {
+      "index": 4,
+      "name": "flatten",
+      "type": "Flatten",
+      "output_shape": "(None, 400)",
+      "params": 0,
+      "hw_ops": {
+        "type": "flatten"
+      }
+    },
+    {
+      "index": 5,
+      "name": "dense",
+      "type": "Dense",
+      "output_shape": "(None, 32)",
+      "params": 12832,
+      "hw_ops": {
+        "type": "dense",
+        "units": 32
+      }
+    },
+    {
+      "index": 6,
+      "name": "dense_1",
+      "type": "Dense",
+      "output_shape": "(None, 10)",
+      "params": 330,
+      "hw_ops": {
+        "type": "dense",
+        "units": 10
+      }
+    }
+  ]
+}
